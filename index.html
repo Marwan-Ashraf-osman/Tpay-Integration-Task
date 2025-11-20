@@ -58,18 +58,18 @@
     <div id="vod-landing-page">
       <h1>Watch at your Own Convenience</h1>
       <p>Stream from one or more devices, anytime from anywhere.</p>
-  
+       <!-- Subscription Form -->
       <div id="subscription-form">
         <div id="loader" style="display: none; flex-direction: column; justify-content: center; align-items: center;">
           <div id="loader-spinner" class="loader"></div>
           <p id="loader-msg">Loading script...</p>
         </div>
-        <!-- Subscription Form -->
+       <!-- Add more countries as needed -->
         <div id="form-view" style="display: block;">
           <select id="country" onchange="updateOperators()">
             <option value="">Select a country</option>
             <option value="egypt">Egypt</option>
-            <!-- Add more countries as needed -->
+            
           </select>
           <select id="operator" onchange="setOperator()">
             <option value="">Select an operator</option>
@@ -82,7 +82,7 @@
           </button>
         </div>
   
-        <!-- Pin Code Entry View -->
+       
         <div id="pin-view" style="display: none">
           <label for="pin-code">Enter Pin Code</label>
           <input type="text" id="pin-code" placeholder="Enter the pin code">
@@ -95,7 +95,7 @@
           </button>
         </div>
   
-        <!-- Success/Failure Message View -->
+        
         <div id="result-view" style="display: none">
           <h2 id="result-message"></h2>
           <button class="btn-subscribe" onclick="restartProcess()">Go Back</button>
@@ -113,3 +113,4 @@
   
    
 </html>
+
